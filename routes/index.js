@@ -7,9 +7,13 @@ router.get('/', function(req, res, next) {
 });
 
 // Login
-router.post('/login', function(req, res, next) {
+/* router.post('/login', function(req, res, next) {
   console.log(req.body.username);
   res.status(200).json({msg: req.body.username});
+}); */
+
+router.get('/login', function(req, res, next) {
+  res.sendFile('../public/login.html');
 });
 
 module.exports = router;
