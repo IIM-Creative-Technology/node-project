@@ -3,19 +3,18 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.status(200).json({msg: "Hello world"});
+  res.sendFile('$(__dirname)/public/index.html')
 });
-// var index = require('./index.html');
-// // ...
-// app.use('/index', index);
+
+
 // Login
 router.post('/login', function(req, res, next) {
   console.log(req.body.username);
   res.status(200).json({msg: req.body.username});
 });
 
-module.exports = router;
 
+module.exports = router;
 
 
 
