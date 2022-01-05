@@ -6,8 +6,13 @@ router.get('/', function(req, res, next) {
   res.status(200).json({msg: "Hello world"});
 });
 
-router.get('/login', function(req, res, next) {
-  res.status(200).json({msg: "connect"});
+router.post('/login', function(req, res, next) {
+  const password = req.body.password;
+  if (password === "qwerty") {
+    res.status(200).json({username: req.body.username});
+  } else {
+    res.status(403).json({msg:"Wrong password, try again"})
+  }
 });
 
 
