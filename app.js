@@ -1,3 +1,5 @@
+const mongoose = require('mongoose');
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -8,10 +10,6 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
-
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -37,5 +35,9 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+mongoose.connect('mongodb+srv://groupe5:1234@node-chat.xqlx7.mongodb.net/node-chat?retryWrites=true&w=majority',{useNewUrlParser: true,useUnifiedTopology: true}).then(()=>{
+  console.log(`Connecté à la bdd`)
+ });
 
 module.exports = app;
