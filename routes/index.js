@@ -5,7 +5,9 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.status(200).json({msg: "Hello world"});
 });
-
+// var index = require('./index.html');
+// // ...
+// app.use('/index', index);
 // Login
 router.post('/login', function(req, res, next) {
   console.log(req.body.username);
