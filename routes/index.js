@@ -7,9 +7,14 @@ router.get('/', function (req, res, next) {
   res.sendFile('$(__dirname)/public/index.html');
 });
 
-/* GET about page. */
+/* GET team page. */
 router.get('/lateam', (req, res) => {
   res.render('team');
+});
+
+/* GET about page. */
+router.get('/apropos', (req, res) => {
+  res.render('about');
 });
 
 // Login
