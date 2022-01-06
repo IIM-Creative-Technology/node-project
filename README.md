@@ -1,4 +1,4 @@
-<p align='center'> <img src="https://i.ibb.co/cJ70Xkw/talkative.png" height="50" alt="talkative" border="0"> </p>
+<p align='center'> <img src="https://i.ibb.co/cJ70Xkw/talkative.png" height="80" alt="talkative" border="0"> </p>
 
 ## 💼 The project
 
