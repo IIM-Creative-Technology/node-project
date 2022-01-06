@@ -1,4 +1,4 @@
-<img src="https://i.ibb.co/cJ70Xkw/talkative.png" alt="talkative" border="0">
+<p align='center'> <img src="https://i.ibb.co/cJ70Xkw/talkative.png" height="50" alt="talkative" border="0"> </p>
 
 ## 💼 The project
 
@@ -8,7 +8,7 @@ Talkative is a chat app that allows the user to chat online with their friends o
 
 #### 💡 Features :
 
-- Authentifiatio
+- Authentifiation
 - Online Chat
 - Connected & disconnected status
 - Group chat
