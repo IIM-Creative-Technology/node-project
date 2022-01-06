@@ -1,4 +1,4 @@
-[![Header](https://ibb.co/8MSq4Nb)](https://github.com/IIM-Creative-Technology/node-project)
+[![Header][(https://ibb.co/8MSq4Nb)](https://github.com/IIM-Creative-Technology/node-project)
 
 ## 💼 The project
 
