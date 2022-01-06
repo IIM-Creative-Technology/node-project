@@ -44,19 +44,19 @@ for the database:
 
 #### 💾 Installation :
 
-- Clone the repo :
+- [ ] Clone the repo :
 
   ```sh
      git clone https://github.com/IIM-Creative-Technology/node-project.git
      ```
 
-- Install the packages
+- [ ] Install the packages
 
    ```sh
    npm install
    ```
 
-- run the project
+- [ ] run the project
 
   ```sh
      npm run dev
