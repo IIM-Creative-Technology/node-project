@@ -1,4 +1,4 @@
-[![Header][ <img src="https://ibb.co/8MSq4Nb"  title="talkative" />()](https://github.com/IIM-Creative-Technology/node-project)
+<img src="https://i.ibb.co/cJ70Xkw/talkative.png" alt="talkative" border="0">
 
 ## 💼 The project
 
@@ -17,7 +17,7 @@ Talkative is a chat app that allows the user to chat online with their friends o
 
 This project was carried out with the use of the following languages :
 
-![Node.js](https://img.shields.io/badge/-Nodejs-black?style=flat-square&logo=Node.js)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
 ![Socket.io](https://img.shields.io/badge/Socket.io-010101?&style=for-the-badge&logo=Socket.io&logoColor=white)
 ![Tailwind Css](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
@@ -39,6 +39,7 @@ for the database:
    ```
    
 - Node.js `https://nodejs.org/en/download/ ` 
+
 
 
 #### 💾 Installation :
@@ -74,6 +75,7 @@ Contributions are what make the open source community such an amazing place to l
 - Open a Pull Request
 
 
+
 ## 🏆 Credits :
 
 
@@ -84,6 +86,7 @@ Contributions are what make the open source community such an amazing place to l
 - MARTINET Alexis `https://github.com/Wintxer`
 - OUEDRAOGO Coralie `https://github.com/coralieO`
 - SAINT MARTIN Julie `https://github.com/jstm17`
+
 
 
 ## 📜 Licence
