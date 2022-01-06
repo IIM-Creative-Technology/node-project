@@ -32,13 +32,13 @@ for the database:
 
 #### 🔐 Prerequisites: 
 
-- Npm
+- [ ] Npm
 
 ```sh
    npm install npm@latest -g
    ```
    
-- Node.js `https://nodejs.org/en/download/ ` 
+- [ ] Node.js `https://nodejs.org/en/download/ ` 
 
 
 
