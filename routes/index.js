@@ -8,9 +8,14 @@ router.get('/', (req, res, next) => {
 router.get('/chatroom', (req, res) => {
   res.render('chatroom');
 });
-
+/* GET team page. */
 router.get('/lateam', (req, res) => {
   res.render('team');
+});
+
+/* GET about page. */
+router.get('/apropos', (req, res) => {
+  res.render('about');
 });
 
 router.get('/login', (req, res) => {
