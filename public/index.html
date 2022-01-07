@@ -13,24 +13,105 @@
   </head>
 
   <body>
-    <!-- Chat -->
-    <ul id="chat"></ul>
-
-    <!-- Send a message -->
-    <form id="send" action="" autocomplete="off" class="chat-form">
-      <div class="input-group p-2">
-        <input
-          id="message"
-          class="chat-input"
-          type="text"
-          placeholder="Envoyer un message"
-        />
-        <div class="input-group-append">
-          <button class="chat-submit" type="submit">Envoyer</button>
+    <div
+      class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3"
+    >
+      <div class="panel-group bg-black p-3">
+        <h6 class="text-white font-bold">Utilisateurs</h6>
+        <!--User-->
+        <div
+          class="flex bg-gray-800 font-bold text-white transition duration-300 ease-in-out hover:bg-gray-900 mr-6 focus:outline-none p-4 mt-3 space-x-4 items-center shadow-xl max-w-sm rounded-md"
+        >
+          <img
+            src="https://avatars.githubusercontent.com/u/5550850?v=4"
+            alt="image"
+            class="h-14 w-14 rounded-full"
+          />
+          <div>
+            <h2 class="text-white font-semibold text-xl">Username</h2>
+            <p class="mt-1 text-green-400 text-sm cursor-pointer">En ligne</p>
+          </div>
+        </div>
+        <!--User-->
+        <div
+          class="flex bg-gray-800 font-bold text-white transition duration-300 ease-in-out hover:bg-gray-900 mr-6 focus:outline-none p-4 mt-4 space-x-4 items-center shadow-xl max-w-sm rounded-md"
+        >
+          <img
+            src="https://avatars.githubusercontent.com/u/5550850?v=4"
+            alt="image"
+            class="h-14 w-14 rounded-full"
+          />
+          <div>
+            <h2 class="text-white font-semibold text-xl">Username</h2>
+            <p class="mt-1 text-green-400 text-sm cursor-pointer">En ligne</p>
+          </div>
+        </div>
+        <!--User-->
+        <div
+          class="flex bg-gray-800 font-bold text-white transition duration-300 ease-in-out hover:bg-gray-900 mr-6 focus:outline-none p-4 mt-4 space-x-4 items-center shadow-xl max-w-sm rounded-md"
+        >
+          <img
+            src="https://avatars.githubusercontent.com/u/5550850?v=4"
+            alt="image"
+            class="h-14 w-14 rounded-full"
+          />
+          <div>
+            <h2 class="text-white font-semibold text-xl">Username</h2>
+            <p class="mt-1 text-green-400 text-sm cursor-pointer">En ligne</p>
+          </div>
+        </div>
+        <h6 class="text-white font-bold mt-6">Groupes</h6>
+        <!--User-->
+        <div
+          class="flex bg-gray-800 font-bold text-white transition duration-300 ease-in-out hover:bg-gray-900 mr-6 focus:outline-none p-4 mt-4 space-x-4 items-center shadow-xl max-w-sm rounded-md"
+        >
+          <div>
+            <h2 class="text-white font-semibold text-xl">La</h2>
+            <p class="mt-1 text-green-400 text-sm cursor-pointer">En ligne</p>
+          </div>
         </div>
       </div>
-    </form>
+      <!--Chat panel-->
+      <div class="chat-panel bg-blue-50 dark:border-blue-300">
+        <div class="chat-header bg-black flex text-white p-6">
+          <p>Username</p>
+        </div>
+        <div class="chat-messages flex p-4 space-x-4">
+          <!-- Ring -->
+          <div class="story-ring flex justify-center items-center">
+            <a class="block bg-white p-1 rounded-full" href="#">
+              <!-- Thumbnail -->
+              <img
+                class="w-12 rounded-full"
+                src="https://images.unsplash.com/photo-1638708644743-2502f38000a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200&q=80"
+              />
+            </a>
+          </div>
+          <!-- Chat -->
+          <ul id="chat"></ul>
+        </div>
 
+        <!-- Send a message -->
+        <form id="send" action="" autocomplete="off" class="chat-form">
+          <div class="input-group p-2 flex p-4 space-x-12">
+            <input
+              id="message"
+              class="chat-input w-full px-2 bg-black text-white focus:outline-none"
+              type="text"
+              placeholder="Envoyer un message"
+            />
+            <div class="input-group-append">
+              <button
+                class="chat-submit flex bg-blue-500 font-bold text-white px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-600 mr-6 focus:outline-none"
+                type="submit"
+              >
+                Envoyer
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="socket.io/socket.io.js"></script>
     <script src="chat.js"></script>
   </body>

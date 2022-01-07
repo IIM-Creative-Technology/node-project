@@ -1,16 +1,17 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
 }
 
 #container {
   width: 700px;
   margin: 0 auto;
 }
+/*
 .chat-input {
   width: 300px;
   height: 35px;
@@ -20,7 +21,7 @@ a {
   width: 50px;
   height: 35px;
   border: solid 1px #444;
-}
+} */
 .chat-window {
   height: 300px;
   width: 400px;
