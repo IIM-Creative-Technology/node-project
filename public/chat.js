@@ -1,6 +1,7 @@
 const socket = io();
 //const chat = document.querySelector('.chat-form')
 //const Input = document.querySelector('.chat-input')
+
 const send = document.querySelector('#send');
 console.log(send);
 send.onsubmit = function(event) {
