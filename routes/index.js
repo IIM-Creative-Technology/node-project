@@ -12,6 +12,16 @@ router.get('/lateam', (req, res) => {
   res.render('team');
 });
 
+/* GET about page. */
+router.get('/chatroom', (req, res) => {
+  res.render('welcomeroom');
+});
+
+/* GET about page. */
+router.get('/room', (req, res) => {
+  res.render('chatroom');
+});
+
 // Login
 router.post('/login', function (req, res, next) {
   console.log(req.body.username);
