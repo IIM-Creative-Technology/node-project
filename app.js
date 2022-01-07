@@ -61,7 +61,7 @@ io.on('connection', (socket) => {
 mongoose.connect('mongodb+srv://groupe5:1234@node-chat.xqlx7.mongodb.net/node-chat?retryWrites=true&w=majority',
   {useNewUrlParser: true,
     useUnifiedTopology: true})
-    .then(() =>console.log(`Connecté à la bdd`))
+    .then(() =>console.log('Connecté à la bdd'))
     .catch(() => console.log('Connexion à la database échouée !')); 
 
 module.exports = app;
