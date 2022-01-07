@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const mongoose = require('mongoose');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -11,6 +12,7 @@ var app = express();
 
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -28,7 +30,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/', express.static(__dirname + '/public'));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -53,4 +55,13 @@ app.use(function (err, req, res, next) {
 io.on('connection', (socket) => {
   console.log('Some client connected');
 });
+
+
+//connect database 
+mongoose.connect('mongodb+srv://groupe5:1234@node-chat.xqlx7.mongodb.net/node-chat?retryWrites=true&w=majority',
+  {useNewUrlParser: true,
+    useUnifiedTopology: true})
+    .then(() =>console.log(`Connecté à la bdd`))
+    .catch(() => console.log('Connexion à la database échouée !')); 
+
 module.exports = app;
