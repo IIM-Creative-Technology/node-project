@@ -87,12 +87,6 @@ Contributions are what make the open source community such an amazing place to l
 - OUEDRAOGO Coralie `https://github.com/coralieO`
 - SAINT MARTIN Julie `https://github.com/jstm17`
 
-## ↗️ improvement points
-
-- The volume system
-- the connection of all the elements
-- lack of material
-- Orginization
 
 
 ## 📜 Licence
